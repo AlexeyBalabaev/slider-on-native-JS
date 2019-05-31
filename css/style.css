@@ -1,0 +1,138 @@
+*, :before, :after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html, body, div, span, h1, ul, li {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #333;
+}
+
+img {
+	display: block;
+	border: none;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 1280px;
+	min-width: 320px;
+	margin: 0 auto;
+	padding: 40px 15px 0;
+}
+
+.show { display: block; }
+
+.heading {
+	text-transform: uppercase;
+	font-size: 35px;
+	line-height: 35px;
+
+	margin-bottom: 35px;
+	padding-bottom: 5px;
+
+	border-bottom: 1px solid #333;
+}
+
+/* gallery */
+.gallery {
+	width: 100%;
+	min-width: 320px;
+	visibility: hidden;
+	margin: 0 auto 35px;
+}
+
+.slider {
+	width: 100%;
+	max-width: 1024px;
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.stage { overflow: hidden; }
+
+.stage > div {
+	float: left;
+	position: relative;
+}
+.stage > div img {
+	width: 100%;
+	max-width: 800px;
+	height: auto;
+}
+
+/* navigation */
+.control {
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+.nav-ctrl span {
+	width: 100px;
+	height: 30px;
+	background: #428bca;
+	display: inline-block;
+
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 30px;
+	color: #eee;
+	text-transform: uppercase;
+	text-align: center;
+
+	margin: 0 5px;
+	border: 1px solid #333;
+	outline: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	cursor: pointer;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+.nav-ctrl span:hover {
+	border-color: #285e8e;
+	background: #3276b1;
+}
+
+.nav-ctrl .diable {
+	opacity: .4;
+	cursor: default;
+}
+
+.dots-ctrl {
+	display: none;
+	margin-top: 10px;
+}
+
+.dots-ctrl li { display: inline-block; }
+
+.dots-ctrl span {
+	width: 10px;
+	height: 10px;
+	background: #0099ff;
+	display: block;
+
+	margin: 5px;
+	border-radius: 50%;
+	
+	opacity: .4;
+	cursor: pointer;
+	-webkit-transition: all .3s;
+	-o-transition: all .3s;
+	transition: all .3s;
+}
+
+.dots-ctrl .active span,
+.dots-ctrl span:hover { opacity: 1; }
