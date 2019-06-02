@@ -21,10 +21,22 @@
 		this.setup = setup;
 
 		this.gallery = document.getElementById(this.id);
-		this.slider = this.gallery.querySelector('.slider')
+		this.slider = this.gallery.querySelector('.slider');
+		this.stage = this.gallery.querySelector('.stage');
+		this.items = this.gallery.querySelectorAll('.staage > div');
+		this.count = this.items.length;
+
+		this.current = 0;
+		this.next = 0;
+		this.pressed = false;
+		this.start = 0;
+		this.shift = 0;
 
 		this.init();
 	};
 
 	window.Gallery = Gallery;
+
+	var fn = Gallery.prototype;
+
 }) ();
